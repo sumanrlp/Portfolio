@@ -2,6 +2,12 @@
     #desktop-nav{
         display: none;
     }
+    .menu_icons {
+      display: none;
+    }
+    .profile_bg{
+      display: none;
+    }
     #hamburger-nav{
         display: flex;
     }
@@ -9,11 +15,13 @@
 
 @media screen and (max-width: 1400px) {
     #profile {
-      height: 83vh;
+      height: auto;
       margin-bottom: 6rem;
     }
     .about-containers {
       flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
     }
     #contact,
     #projects {
@@ -36,6 +44,9 @@
     .section-container {
       display: block;
     }
+    #profile{
+      height: auto;
+    }
     .arrow {
       display: none;
     }
@@ -46,13 +57,22 @@
     section {
       margin: 0 5%;
     }
-    .section__pic-container {
-      width: 275px;
-      height: 275px;
+    .profile_pic_container {
+      width: auto;
+      height: 60vw;
       margin: 0 auto 2rem;
+    }
+    .profile_pic_container img{
+      width: auto;
+      height: 60vw;
+    }
+    .profile_container{
+      flex-direction: column;
     }
     .about-containers {
       margin-top: 0;
+      align-items: center;
+      justify-content: center;
     }
   }
   
@@ -62,7 +82,7 @@
       height: 40vh;
     }
     #profile {
-      height: 83vh;
+      height: auto;
       margin-bottom: 0;
     }
     article {
@@ -76,6 +96,8 @@
     .contact-info-upper-container,
     .btn-container {
       flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
     }
     .contact-info-container {
       margin: 0;
@@ -95,12 +117,18 @@
       gap: 0.5rem;
       text-align: center;
     }
-    .section__pic-container {
+    .profile_pic_container {
       width: auto;
-      height: 46vw;
-      justify-content: center;
+      height: auto;
     }
-    .section__text__p2 {
+    .profile_pic_container img {
+      width: 50vw;
+      height: 60vw;
+    }
+    .profile_container{
+      flex-direction: column;
+    }
+    .section_text_p2 {
       font-size: 1.25rem;
     }
     .title {
